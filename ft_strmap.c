@@ -6,7 +6,7 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 20:26:15 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/17 21:33:07 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/25 22:48:57 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmap(char const *str, char (*f)(char))
 	char	*new;
 	int		i;
 
-	if (!str)
+	if (!str || !f)
 		return (NULL);
 	new = (char *)malloc(sizeof(*new) * (ft_strlen((char *)str) + 1));
 	if (!new)

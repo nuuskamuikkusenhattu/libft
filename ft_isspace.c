@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 11:25:08 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 20:59:01 by spuustin         ###   ########.fr       */
+/*   Created: 2021/11/25 22:09:12 by spuustin          #+#    #+#             */
+/*   Updated: 2021/11/25 22:13:03 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char const *string)
+int	ft_isspace(char c)
 {
-	int		i;
-
-	i = 0;
-	if (string)
-	{
-		while (string[i] != '\0')
-		{
-			ft_putchar(string[i]);
-			i++;
-		}
-	}
+	if (c == '\t' || c == '\n' || c == '\v' || c == '\f'
+		|| c == '\r' || c == ' ')
+		return (1);
+	return (0);
 }

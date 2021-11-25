@@ -6,11 +6,13 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 19:32:50 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/23 13:56:46 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/25 17:43:48 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
 	int		i;
 

@@ -6,12 +6,14 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 12:36:27 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/23 13:32:29 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/25 22:48:37 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+// creates malloced string of combo str1+str2
 
 char	*ft_strjoin(char const *str1, char const *str2)
 {
@@ -23,7 +25,7 @@ char	*ft_strjoin(char const *str1, char const *str2)
 		return (NULL);
 	new = (char *) malloc(sizeof(*new) * ft_strlen((char *) str1)
 			+ ft_strlen((char *) str2) + 1);
-	if (!new || !str1 || !str2)
+	if (!new)
 		return (NULL);
 	i = 0;
 	j = 0;

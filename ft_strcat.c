@@ -6,11 +6,13 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 16:20:20 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/08 16:50:38 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/25 22:41:37 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// adds copy of source to end of destination
 
 char	*ft_strcat(char *dest, const char *src)
 {

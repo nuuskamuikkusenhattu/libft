@@ -6,7 +6,7 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 17:10:13 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/23 13:26:35 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/25 17:08:25 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_strequ(char const *s1, char const *s2)
 	i = 0;
 	if (s1 && s2)
 	{
-		while (s1[i] != '\0' && s2[i] != '\0')
+		while (s1[i] != '\0' || s2[i] != '\0')
 		{
 			if (s1[i] != s2[i])
 				return (0);

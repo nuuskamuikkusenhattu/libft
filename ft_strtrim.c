@@ -6,7 +6,7 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 12:59:21 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/23 16:31:20 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/25 18:04:54 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,10 @@ static int	count_beg_spaces(char const *str)
 static int	count_end_spaces(char const *str)
 {
 	int		spaces;
-	int		i;
+	size_t	i;
 
 	spaces = 0;
-	i = ft_strlen((char *) str) - 1;
+	i = ft_strlen(str) - 1;
 	while (i > 0)
 	{
 		if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t')
@@ -64,14 +64,14 @@ char	*ft_strtrim(char const *str)
 		return (NULL);
 	spaces_beg = count_beg_spaces(str);
 	spaces_end = count_end_spaces(str);
-	if (spaces_beg == ft_strlen((char *) str))
+	if (spaces_beg == (int) ft_strlen(str))
 		return ("");
-	new = (char *)malloc(sizeof(*new) * ((ft_strlen((char *) str)
+	new = (char *)malloc(sizeof(*new) * (((int) ft_strlen(str)
 					- spaces_beg - spaces_end + 1)));
 	if (!new)
 		return (NULL);
 	i = 0;
-	while (i + spaces_beg < (ft_strlen((char *) str) - spaces_end))
+	while (i + spaces_beg < ((int) ft_strlen(str) - spaces_end))
 	{
 		new[i] = str[i + spaces_beg];
 		i++;

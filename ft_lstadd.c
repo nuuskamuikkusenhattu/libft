@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 11:25:08 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 20:59:01 by spuustin         ###   ########.fr       */
+/*   Created: 2021/11/24 22:47:37 by spuustin          #+#    #+#             */
+/*   Updated: 2021/11/25 22:19:56 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char const *string)
-{
-	int		i;
+// add element to beginnning of list
 
-	i = 0;
-	if (string)
+void	ft_lstadd(t_list **alst, t_list *new)
+{
+	if (*alst)
 	{
-		while (string[i] != '\0')
-		{
-			ft_putchar(string[i]);
-			i++;
-		}
+		new->next = *alst;
 	}
+	*alst = new;
 }

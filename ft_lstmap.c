@@ -1,42 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/16 12:08:31 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 22:56:28 by spuustin         ###   ########.fr       */
+/*   Created: 2021/11/25 00:31:41 by spuustin          #+#    #+#             */
+/*   Updated: 2021/11/25 22:46:55 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-//returns fresh substr of size len beginning from start
+// allocates memory for new list, adds function returns to new list.
 
-char	*ft_strsub(char const *str, unsigned int start, size_t len)
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	char	*new;
-	int		i;
-	size_t	strlen;
+	t_list	*new;
+	t_list	*temp;
 
-	if (!str)
+	if (!lst || !f)
 		return (NULL);
-	strlen = ft_strlen(str);
-	if (start > strlen)
+	temp = f(lst);
+	if (!temp)
 		return (NULL);
-	new = (char *) malloc(sizeof(*new) * len + 1);
+	new = (t_list *)malloc(sizeof(*new));
 	if (!new)
 		return (NULL);
-	i = 0;
-	while (len > 0)
+	new = temp;
+	while (lst->next)
 	{
-		new[i] = str[start];
-		i++;
-		start++;
-		len--;
+		lst = lst->next;
+		temp->next = f(lst);
+		if (temp->next == NULL)
+		{
+			free(new);
+			new = NULL;
+			return (NULL);
+		}
+		temp = temp->next;
 	}
-	new[i] = '\0';
 	return (new);
 }

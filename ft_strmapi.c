@@ -6,7 +6,7 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 21:13:33 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/22 18:38:31 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/25 22:49:06 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *str, char(*f)(unsigned int, char))
 	char			*new;
 	unsigned int	i;
 
-	if (!str)
+	if (!str || !f)
 		return (NULL);
 	new = (char *)malloc(sizeof(*new) * (ft_strlen((char *)str) + 1));
 	if (!new)

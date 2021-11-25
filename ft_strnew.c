@@ -6,12 +6,14 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 16:26:38 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/18 12:32:24 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/25 22:50:36 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+// size-long new string containing null-chars
 
 char	*ft_strnew(size_t size)
 {

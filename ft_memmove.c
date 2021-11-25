@@ -6,11 +6,13 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 16:50:14 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/22 21:38:05 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/25 22:33:54 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// overlap protected memcpy 
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {

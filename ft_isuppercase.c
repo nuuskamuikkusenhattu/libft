@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_isuppercase.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 11:25:08 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 20:59:01 by spuustin         ###   ########.fr       */
+/*   Created: 2021/11/25 22:14:47 by spuustin          #+#    #+#             */
+/*   Updated: 2021/11/25 22:15:52 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char const *string)
+int	ft_isuppercase(char c)
 {
-	int		i;
-
-	i = 0;
-	if (string)
-	{
-		while (string[i] != '\0')
-		{
-			ft_putchar(string[i]);
-			i++;
-		}
-	}
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	return (0);
 }

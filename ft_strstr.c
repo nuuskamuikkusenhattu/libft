@@ -6,11 +6,13 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 12:35:14 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/12 13:48:40 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/25 22:54:23 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// searches ndl from haystack
 
 char	*ft_strstr(const char *haystack, const char *ndl)
 {

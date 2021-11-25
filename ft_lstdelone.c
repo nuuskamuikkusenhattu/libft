@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 11:25:08 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 20:59:01 by spuustin         ###   ########.fr       */
+/*   Created: 2021/11/24 23:44:40 by spuustin          #+#    #+#             */
+/*   Updated: 2021/11/25 00:00:01 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-void	ft_putstr(char const *string)
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
-	int		i;
+	t_list	*temp;
 
-	i = 0;
-	if (string)
+	temp = *alst;
+	if (alst)
 	{
-		while (string[i] != '\0')
-		{
-			ft_putchar(string[i]);
-			i++;
-		}
+		del(temp->content, temp->content_size);
+		free(*alst);
+		*alst = NULL;
 	}
 }
