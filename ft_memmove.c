@@ -6,7 +6,7 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 16:50:14 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 22:33:54 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:42:16 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 
 	i = 0;
 	temp1 = (unsigned char *) dst;
-	temp2 = (unsigned char *) src;
+	temp2 = (const unsigned char *) src;
 	if (!dst && !src)
 		return (NULL);
 	if (src < dst)

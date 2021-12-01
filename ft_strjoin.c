@@ -6,12 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 12:36:27 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 22:48:37 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:11:56 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 // creates malloced string of combo str1+str2
 

@@ -6,7 +6,7 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 16:28:11 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 22:31:58 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:40:50 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	size_t			i;
-	unsigned char	*destination;
-	unsigned char	*source;
+	size_t				i;
+	unsigned char		*destination;
+	const unsigned char	*source;
 
 	destination = (unsigned char *)dst;
-	source = (unsigned char *)src;
+	source = (const unsigned char *)src;
 	if (!dst && !src)
 		return (NULL);
 	i = 0;

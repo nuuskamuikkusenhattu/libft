@@ -6,9 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 17:09:27 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/03 17:29:00 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:13:44 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

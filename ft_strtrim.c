@@ -6,12 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 12:59:21 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 18:04:54 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:22:03 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static int	count_beg_spaces(char const *str)
 {
@@ -65,7 +64,7 @@ char	*ft_strtrim(char const *str)
 	spaces_beg = count_beg_spaces(str);
 	spaces_end = count_end_spaces(str);
 	if (spaces_beg == (int) ft_strlen(str))
-		return ("");
+		return (ft_strdup(""));
 	new = (char *)malloc(sizeof(*new) * (((int) ft_strlen(str)
 					- spaces_beg - spaces_end + 1)));
 	if (!new)

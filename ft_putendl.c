@@ -6,11 +6,12 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 14:13:09 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/24 19:00:23 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:11:06 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
+
 void	ft_putendl(char const *s)
 {
 	int		i;

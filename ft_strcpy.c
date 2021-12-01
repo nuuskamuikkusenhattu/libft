@@ -6,9 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 20:45:04 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/03 17:47:19 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:11:40 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strcpy(char *destination, const char *source)
 {

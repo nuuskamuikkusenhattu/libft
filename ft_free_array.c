@@ -6,12 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 16:36:51 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/23 16:47:56 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:07:40 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	**ft_free_array(char **array)
 {

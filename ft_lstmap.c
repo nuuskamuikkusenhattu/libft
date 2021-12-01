@@ -6,12 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 00:31:41 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 22:46:55 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:37:50 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 // allocates memory for new list, adds function returns to new list.
 

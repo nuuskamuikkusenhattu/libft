@@ -6,12 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 16:28:38 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/23 16:48:14 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:14:02 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static int	word_count(char const *str, char c)
 {

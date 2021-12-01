@@ -6,9 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 13:30:10 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 20:39:38 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:09:11 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

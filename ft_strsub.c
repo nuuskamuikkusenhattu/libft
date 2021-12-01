@@ -6,12 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 12:08:31 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/25 22:56:28 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:13:56 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 //returns fresh substr of size len beginning from start
 

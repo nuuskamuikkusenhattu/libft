@@ -6,12 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:57:01 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/18 12:29:07 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:11:24 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putnbr(int nb)
 {

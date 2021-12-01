@@ -6,7 +6,7 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 11:01:18 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/22 21:24:54 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:41:51 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 
 	if (!str1 && !str2)
 		return (0);
-	temp1 = (unsigned char *) str1;
-	temp2 = (unsigned char *) str2;
+	temp1 = (const unsigned char *) str1;
+	temp2 = (const unsigned char *) str2;
 	i = 0;
 	while (n > 0)
 	{

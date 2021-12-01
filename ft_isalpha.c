@@ -6,11 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:41:12 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/08 13:33:07 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:08:20 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

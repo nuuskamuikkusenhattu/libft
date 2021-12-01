@@ -6,12 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 17:18:32 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/23 13:47:24 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:12:00 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 /*
 if size is smaller than dest_len, return size + source_len

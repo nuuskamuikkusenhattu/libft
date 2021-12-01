@@ -6,12 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 13:11:22 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/23 13:20:25 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:23:19 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static int	num_length(int n)
 {
@@ -52,7 +51,7 @@ char	*ft_itoa(int n)
 	number = (char *)malloc(sizeof(*number) * (length + neg));
 	if (!number)
 		return (NULL);
-	number[length] = '\0';
+	number[length + neg - 1] = '\0';
 	while (--length + neg > 0)
 	{
 		number[length + neg - 1] = n % 10 + '0';

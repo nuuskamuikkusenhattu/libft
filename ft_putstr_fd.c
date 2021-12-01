@@ -6,12 +6,11 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:48:11 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/24 18:59:15 by spuustin         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:11:27 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putstr_fd(char const *str, int fd)
 {
