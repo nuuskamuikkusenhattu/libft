@@ -6,7 +6,7 @@
 /*   By: spuustin <spuustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 19:42:14 by spuustin          #+#    #+#             */
-/*   Updated: 2021/11/29 12:16:37 by spuustin         ###   ########.fr       */
+/*   Updated: 2022/04/14 12:03:25 by spuustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "printf/printf.h"
 
 typedef struct s_list
 {
