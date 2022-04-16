@@ -33,8 +33,8 @@ print_pointers.o print_strings.o printf_itoabase.o validation.o
 
 all: $(NAME)
 $(NAME):
-	gcc -c -Wall -Wextra -Werror $(PRINTF_C) -I printf/printf.h
-	gcc -c -Wall -Wextra -Werror $(CFILES) -I libft.h
+	gcc -c -Wall -Wextra -Werror $(PRINTF_C) -I /printf/printf.h
+	gcc -c -Wall -Wextra -Werror $(CFILES) -I . libft.h
 	ar rc $(NAME) $(OFILES) $(PRINTF_O)
 	ranlib $(NAME)
 
